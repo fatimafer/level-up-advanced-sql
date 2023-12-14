@@ -17,17 +17,20 @@
   "files.autoSave": "afterDelay",
   "screencastMode.onlyKeyboardShortcuts": true,
   "terminal.integrated.fontSize": 14,
-  "window.zoomLevel": 3,
   "workbench.colorTheme": "Default Light+",
   "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
   "sqltools.connections": [
     {
       "previewLimit": 50,
-      "driver": "SQLite",
-      "name": "Test",
-      "database": "${workspaceFolder:Demos}/CarsForAll.db"
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "PostgreSQL Database",
+      "database": "linkedin",
+      "username": "vscode",
+      "password": "postgres"
     }
   ],
-  "workbench.editor.openSideBySideDirection": "down"
+  "sqltools.useNodeRuntime": true
 }
