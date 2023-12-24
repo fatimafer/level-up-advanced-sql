@@ -10,6 +10,9 @@ SELECT sql
 FROM sqlite_schema
 WHERE name = 'employee';
 
+SELECT sql
+FROM sqlite_schema
+WHERE name = 'sales';
 
 
 select column_name 
