@@ -7,6 +7,9 @@ SELECT emp.employeeId,
 FROM sales sls
 INNER JOIN employee emp
     ON sls.employeeId = emp.employeeId
-WHERE sls.soldDate >= date('now','start of year')
+WHERE sls.soldDate >= date('now','start of year') -- Te muestra desde el inicio del año
 GROUP BY emp.employeeId
 HAVING count(*) > 5
+
+
+
